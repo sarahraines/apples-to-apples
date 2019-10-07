@@ -79,6 +79,7 @@ class Game:
             'Please select a winning points threshold between 1-100. '
         points_prompt_again = \
             'Not a valid input. Please enter a number between 1-100. '
+
         self.points_threshold = input(points_prompt).strip()
         while not self.points_threshold.isdigit():
             self.points_threshold = input(points_prompt_again).strip()
@@ -133,6 +134,7 @@ class Game:
             green_card.get_value() +
             '\n'
         )
+        
         for choice in choices.items():
             print(
                 choice[0].capitalize()
